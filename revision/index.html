@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container-div">
+        <div class="friend">
+            <h2>friend-1 </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, minima.</p>
+
+        </div>
+        <div class="friend">
+            <h2>friend-2 </h2>
+            <p>Nesciunt ea aperiam omnis incidunt itaque provident, officiis molestias. Hic.</p>
+
+        </div>
+        <div class="friend">
+            <h2>friend-3 </h2>
+            <p>Temporibus, deleniti blanditiis? Voluptas, porro. Vel rem aliquid magnam voluptatibus.</p>
+
+        </div>
+        <div class="friend">
+            <h2>friend-4 </h2>
+            <p>Dolorum quasi reprehenderit aliquid sint alias vitae. Dolorem, ut incidunt?</p>
+
+        </div>
+        <div class="friend">
+            <h2>friend-5 </h2>
+            <p>Illum magni molestias, iure consectetur dolor reiciendis obcaecati? Est, nihil.</p>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const friends = [
+        { id: 1, name: 'udhas', job: 'brac bank' },
+        { id: 2, name: 'mahbub', job: 'nrbc bank' },
+        { id: 3, name: 'shaba', job: 'Selsi' }
+    ];
+    const friendName = friends.map(friend => friend.name);
+    console.log(friendName);
+
+    const friendDiv = `
+            <div class="friend">
+            <h2>friend Name : ${friendName}  </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, minima.</p>
+        </div>
+    `;
+    const mainDiv = document.getElementById("container-div");
+    mainDiv.appendChild(friendDiv);
+</script>
+
+</html>
